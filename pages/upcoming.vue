@@ -14,7 +14,7 @@
         <ul v-if="searchInput" class="suggestion absolute z-50 bg-white shadow-md p-3 sm:w-4/12 w-11/12">
           <li v-for="search in data.results" :key="search.id" class="opacity-75 hover:opacity-100">
             <NuxtLink :to="`/_single/${search.id}`">
-              { {search.title }}
+              {{ search.title }}
             </NuxtLink>
           </li>
         </ul>
